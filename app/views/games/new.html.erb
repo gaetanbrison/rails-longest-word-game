@@ -1,0 +1,13 @@
+<h1>Games#new</h1>
+<p>Find me in app/views/games/new.html.erb</p>
+
+<h2>Here is your random set of letters of random size</h2>
+<% @random.each do |letter| %>
+  <%= letter.capitalize %>
+<% end %>
+
+<form action="/score">
+  <input type="text" name="game">
+  <input type="submit" value="Create a Word!">
+</form>
+
